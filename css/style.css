@@ -433,6 +433,7 @@ footer{
     gap: 20px;
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .social-link{
@@ -441,13 +442,13 @@ footer{
     padding: 0;
     flex-flow: column wrap;
     align-items: center;
-    justify-content: center;
 }
 
 .social-link h3{
     color: #f8efef;
     font-weight: bold;
     font-size: 2em;
+    margin-bottom: 0.3em;
 }
 
 .social{
