@@ -43,8 +43,7 @@ header{
     max-width: 6.125em;
 }
 
-/** Slideshow section **/
-
+/** Slideshow Home **/
 .slideshow-items{
     overflow: hidden;
 }
@@ -83,7 +82,7 @@ header{
     color: #fff;
 }
 
-.slideshow-item a {
+.slideshow-link{
     padding: 12px 18px;
     border-radius: 30px;
     background-color: #1F487E;
@@ -95,17 +94,6 @@ header{
 .slideshow-item p {
     color: #eee;
     font-size: 20px;
-}
-
-.slideshow-content{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .slideshow-content h1{
@@ -123,6 +111,17 @@ header{
 .slideshow-content a{
     display: inline-block;
     margin-top: 15px;
+}
+
+/* Slideshow About */
+
+[data-component="slideshow"] .slide {
+	display: none;
+  text-align: center;
+}
+
+[data-component="slideshow"] .slide.active {
+	display: block;
 }
 
 /** Main section **/
