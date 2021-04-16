@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>electroMAG</title>
+</head>
+<body>
+    <header>
+        <div class="logo-section">
+            <img src="images/Electro-logo.png" alt="Logo png" />
+        </div>
+        <div class="meniu-section">
+            <nav>
+                <i class="fas fa-bars"></i>
+                    <ul class="nav">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About us</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="images/choose-bg.jpg" style="width:100%">
+          <div class="text">Contact</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="images/Thenology.png" style="width:100%">
+          <div class="text">Contact</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="images/Software.jpg" style="width:100%">
+          <div class="text">Contact</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+    <main>
+        <div class="new-pc">
+            <div class="container">
+                    <div class="new-pc-heading">
+                        <h2 class="new-pc-title">Contact</h2> 
+                        <p class="new-pc-subtitle">These are our contact information</p>
+                    </div>
+                <div class="new-pc-container">
+                    <div class="new-pc-products">
+                        <i class="fas fa-home"></i>
+                        <p class="products-description">Strada Avrig 5, Sibiu 550027</p>
+                    </div>
+                    <div class="new-pc-products">
+                        <i class="fas fa-phone-alt"></i>
+                        <p class="products-description">+123 456 789</p>
+                    </div>
+                    <div class="new-pc-products">
+                        <i class="far fa-envelope"></i>
+                        <p class="products-description">aspet.1911@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <form class="contact-form">
+                <div class="contact-form-grup">
+                    <label for="firstname">First Name</label>
+                    <input class="contact-form-content" type="text" placeholder="Enter first name" />
+                </div>
+                <div class="contact-form-grup">
+                    <label for="lastname">Last Name</label>
+                    <input class="contact-form-content" type="text" placeholder="Enter last name" />
+                </div>
+                <div class="contact-form-grup">
+                    <label for="email">Email</label>
+                    <input  class="contact-form-content" type="email" name="email" id="email" placeholder="Enter email" />
+                </div> 
+                <div class="contact-form-grup">
+                    <label for="message">Message</label>
+                    <input class="contact-form-content" type="text" placeholder="Your message" />
+                </div>
+            </form>
+        </div>
+
+    </main>
+    <footer>
+            <div class="container">
+                <div class="footer-container">
+                    <div class="second-footer-container" >
+                        <div class="footer-meniu">
+                            <ul class="footer-list">
+                                <li>
+                                    Links
+                                </li>
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="about.html">About us</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-meniu">
+                            <ul class="footer-list">
+                                <li>
+                                    Links
+                                </li>
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="about.html">About us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="social"> 
+                        <div class="social-link">   
+                            <h3>Social Links</h3>     
+                            <ul class="social-list">
+                                <li>
+                                    <a href="#">
+                                        <img src="images/facebook.png" alt="Facebook"/>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/instagram.png" alt="Instagram"/>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="newsletter">
+                            <h3>Newsletter</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, placeat!</p>
+                                <input type="email" name="email" placeholder="Enter your email address" />
+                                <button type="submit">Submit!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
