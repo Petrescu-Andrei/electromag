@@ -17,7 +17,7 @@
         </div>
         <div class="meniu-section">
             <nav>
-                <i class="fas fa-bars"></i>       
+                <i class="fas fa-bars"></i>
                     <ul class="nav">
                         <li>
                             <a href="index.html">Home</a>
@@ -32,18 +32,34 @@
             </nav>
         </div>
     </header>
-    <div class="slideshow-items">
-        <div class="slideshow-item">
-            <div class="slideshow-bg">
-                <img src="images/Thenology.png" alt="Tehnology image">
-            </div>
-                <div class="slideshow-content">
-                    <div>
-                        <h1>About us</h1>
-                    </div>
-                </div>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="images/choose-bg.jpg" style="width:100%">
+          <div class="text">About us</div>
         </div>
-    </div>
+        
+        <div class="mySlides fade">
+          <img src="images/Thenology.png" style="width:100%">
+          <div class="text">About us</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="images/Software.jpg" style="width:100%">
+          <div class="text">About us</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
     <main>
        <div class="container">
            <div class="container-about">
@@ -164,5 +180,6 @@
                 </div>
             </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
