@@ -43,8 +43,10 @@ header{
     max-width: 6.125em;
 }
 
-/** Slideshow section **/
-
+/** Slideshow Home **/
+.slideshow{
+    position: relative;
+}
 .slideshow-items{
     overflow: hidden;
 }
@@ -83,7 +85,7 @@ header{
     color: #fff;
 }
 
-.slideshow-item a {
+.slideshow-link{
     padding: 12px 18px;
     border-radius: 30px;
     background-color: #1F487E;
@@ -97,7 +99,7 @@ header{
     font-size: 20px;
 }
 
-.slideshow-content{
+.slideshow-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -124,6 +126,83 @@ header{
     display: inline-block;
     margin-top: 15px;
 }
+
+/* Slideshow About */
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+  
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+ 
+.prev:hover, .next:hover {
+    background-color: #1F487E;
+ }
+  
+.text {
+    color: #fff;
+    font-size: 40px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+.dot {
+    display: none;
+}
+  
+.active{
+    background-color: #717171;
+}
+  
+.fade img{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
 
 /** Main section **/
 
@@ -380,6 +459,29 @@ main a{
     color: rgb(77, 77, 77);
 }
 
+/**About body**/
+
+.container-about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 20px;
+    background-color: #f4eaea;
+}
+
+.container-about-description{
+    padding: 10px;
+
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.container-about-image img{
+    object-fit: contain;
+    width: 100%;
+ 
+}
+
 /** Footer section **/
 
 footer{
@@ -433,6 +535,7 @@ footer{
     gap: 20px;
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .social-link{
@@ -441,13 +544,13 @@ footer{
     padding: 0;
     flex-flow: column wrap;
     align-items: center;
-    justify-content: center;
 }
 
 .social-link h3{
     color: #f8efef;
     font-weight: bold;
     font-size: 2em;
+    margin-bottom: 0.3em;
 }
 
 .social{
